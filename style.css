@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background-newsletter: #F9F9F9;
+  --background-title: #EDE637;
+}
+
+main {
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
+  background-color: var(--background-newsletter);
+  overflow: hidden;
+
+}
+
+.title {
+  width: 100%;
+  height: 80px;
+  background-color: var(--background-title);
+  color: black;
+  text-align: center;
+  vertical-align: auto;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.logo img{
+  width: 100px;
+}
+
+
+.message{
+  margin: 12px 24px 12px 24px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.splitter{
+  padding: 20px 24px 20px 24px;
+}
+
+.title-section{
+  width: 100%;
+  height: 50px;
+  font-family: Helvetica, sans-serif;
+  background-color: var(--background-title);
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  margin-bottom: 20px;
+}
+
+.content-title{
+  margin-left: 24px;
+  margin-bottom: 15px;
+}
+
+.whats-new-image{
+  width: 504px;
+  padding: 12px 24px 12px 24px;
+  display: block;
+  margin: auto;
+}
+
+.content-section{
+  padding: 12px 24px 12px 24px;
+  font-family: DM Sans, sans-serif;
+}
+
+.inspirational-container{
+  margin-top: 24px;
+  padding-right: 24px;
+  padding-left: 24px;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 24px;
+  font-family: DM Sans, sans-serif;
+}
+
+.inspirational-photo{
+  object-fit: cover;
+  width: 250px;
+}
+
+footer{
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #E3DCDC;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.social-media-container{
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.social-media-container a img{
+  width: 50px;
+}
+
+.info-container{
+  margin: 24px;
+  text-align: center;
+  font-family: DM Sans, sans serif;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 500px) {
+  .inspirational-container {
+    flex-direction: column;
+  }
+
+  .inspirational-photo{
+    width: 100%;
+    margin: 0 auto
+  }
+}
